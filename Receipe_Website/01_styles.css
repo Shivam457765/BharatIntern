@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    background-color: #7b8124;
+    background-image: linear-gradient(98deg,#aeb457,#c85a5a 100%);
+}
+
+.navContainer{
+    width: 100vw;
+    background-color: rgb(59, 59, 78);
+    min-height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    /* overflow-x: none; */
+    padding-right: 2rem;
+
+}
+
+#navList{
+    width: 100%;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+
+    /* Alinging items on extreme left and extreme right */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+
+    /* using margin */
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    
+    padding: 15px;
+}
+
+#navLogo{
+    font-size: 2.8rem;
+    color: yellow;
+    border:5px solid red;
+    border-radius: 40px;
+    padding: 4px;
+}
+
+
+a{
+    /* Remove underline from the anchor tab  */
+    text-decoration: none;
+    color: white;
+}
+
+#navItems{
+    display: flex;
+    gap: 50px;
+}
+
+
+/* coloring the text inside the anchor tag */
+/* Below approach to color will also work but I am setting color directly inside the anchor tab */
+/* #navItems a{
+    color: white;
+} */
+
+
+.footerBox{
+    background-color: rgb(59, 59, 78);
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+}
+
+.footerBox p{
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.contentBox{
+    width: 50%;
+    margin: auto;
+    /* border: 2px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s linear 0s ;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 100px;
+}
+
+.rightBox img{
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid black;
+
+    /* Adding tansition */    transition: all 2s linear 0s;
+}
+
+.rightBox:hover{
+    transform: scale(1.5);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.leftBox h2{
+    font-size: 2rem;
+}
+
+.ingBox{
+    font-size: 1.3rem;
+}
+
+.reBox{
+    font-size: 1.3rem;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(85, 81, 81, 0.373);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: all 0.6s linear 0s;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+
